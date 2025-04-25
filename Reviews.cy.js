@@ -1,4 +1,4 @@
-describe('Reviews', () => {
+describe('Disc and Store Reviews', () => {
 
   
     it('Disc Review', () => {
@@ -10,7 +10,7 @@ describe('Reviews', () => {
         cy.get('.col-auto > .q-btn--outline').click() //Login btn
       
           
-        cy.get('[data-cy="login-email"]').type("Trydiscs096@yopmail.com") //Email
+        cy.get('[data-cy="login-email"]').type("Trydiscs096@yopmail.com") //Email (Change user account to the once you want to add new review for same disc)
         cy.get('[data-cy="login-password"]').type("Testing@123") //Password
         cy.get("button[name='signin']").click() //Signin btn
   
@@ -125,7 +125,7 @@ describe('Reviews', () => {
         cy.get('.col-auto > .q-btn--outline').click() //Login btn
       
           
-        cy.get('[data-cy="login-email"]').type("Trydiscs096@yopmail.com") //Email
+        cy.get('[data-cy="login-email"]').type("Trydiscs096@yopmail.com") //Email (Change user account to the once you want to add new review for same Store)
         cy.get('[data-cy="login-password"]').type("Testing@123") //Password
         cy.get("button[name='signin']").click() //Signin btn
   
